@@ -27,6 +27,7 @@ public class FMUtil {
     private Utils utils;
     public ResponseEntity<ApiResponse> getFilesList(String path)
     {
+        System.out.println("getFilesList called : "+path);
         try{
             if (path == null || path.isBlank() || path.equalsIgnoreCase("initial"))
                 path = INITIAL_PATH;

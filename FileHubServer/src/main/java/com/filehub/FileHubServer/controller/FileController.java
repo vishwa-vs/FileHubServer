@@ -37,9 +37,12 @@ public class FileController {
         return FMUtil.getFilesList(filePath);
     }
 
+
     @GetMapping("downloadfile")
     public ResponseEntity<?> sendFile(@RequestParam String filePath)
     {
+        System.out.println("downloadfiles");
+
         return FMUtil.getFile(filePath);
     }
 
